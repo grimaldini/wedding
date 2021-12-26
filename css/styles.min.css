@@ -1,22 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 p{
     font-size:15px;
     line-height:29px;
-    color:white;
     padding-bottom:20px
 }
 h1{
-    font-size:60px
+    font-size:75px
 }
 h2{
     font-size:40px;
     font-weight:300;
-    color:#3D4351
 }
 h3{
-    color:white;
     font-size:18px;
     font-weight:700;
     text-transform:uppercase;
@@ -89,17 +87,41 @@ section.intro,section.features-extra,section.rsvp{
 section.features,section.events,section.blog{
     background:#f8f9fd
 }
-section#intro {
-	background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url("../img/sphinx.png") no-repeat center center fixed;
-	background-size: cover;
+.dresscode {
+    color: black;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.25);
 }
 section#events {
-	background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url("../img/pyramid.png") no-repeat center center fixed;
+	background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url("../img/4nniversary.jpg") no-repeat;
 	background-size: cover;
+    min-height:1000px;
+    color: black;
+}
+section#intro {
+	background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url("../img/sphinx.png") no-repeat;
+	background-size: cover;
+    min-height:1200px;
+    color: black;
+    text-align: left;
+}
+section#intro2 {
+    background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url("../img/yellowstone.jpg") no-repeat;
+	background-size: cover;
+    min-height:720px;
+    color: black;
 }
 section#invitation {
-	background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url("../img/invitation.jpg") no-repeat center center;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url("../img/invitation.jpg") no-repeat center center;
 	background-size: cover;
+    color:white;
+}
+section#proposal {
+	background:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)), url("../img/camel.jpg") no-repeat;
+	background-size: cover;
+    min-height:850px;
+    color: black;
+    text-align: right;
 }
 .group:after{
     content:"";
@@ -148,7 +170,7 @@ section .header{
     padding:40px 0
 }
 .section-border{
-    border-bottom:1px solid #E6E9EA
+    border-bottom:1px solid black
 }
 .tooltip{
     position:absolute;
@@ -337,7 +359,8 @@ section .header{
 }
 .hero h1{
     color:#fff;
-    margin-bottom:40px
+    margin-bottom:20px;
+    font-family: 'Alex Brush';
 }
 .hero p.intro{
     color:#fff;
@@ -346,11 +369,12 @@ section .header{
     margin-bottom:80px
 }
 .hero .hero-content{
-    padding-top:30%
+    padding-top:18%;
+    /* font-style: italic; */
 }
 .hero .hero-content img{
     width:55%;
-    margin-bottom:5%
+    margin-bottom:5%;
 }
 .navigation{
     transition:all 300ms ease-in-out;
@@ -454,9 +478,6 @@ header .member-actions{
 #intro img{
     width:100%;
     height:auto
-}
-#intro p{
-    text-align:center
 }
 .features{
     position:relative

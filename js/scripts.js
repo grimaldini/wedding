@@ -1,5 +1,22 @@
 $(document).ready(function () {
 
+    // var mapOptions = {
+    //     zoom: 13,
+    //     mapTypeId: google.maps.MapTypeId.ROADMAP,
+    //     panControlOptions: {
+    //         position: google.maps.ControlPosition.TOP_RIGHT
+    //     },
+    //     zoomControlOptions: {
+    //         position: google.maps.ControlPosition.TOP_RIGHT
+    //     }
+    // };
+    // var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    // map.panBy(-200, 0);
+
+    // google.maps.event.addListenerOnce(document.getElementById('map'), 'bounds_changed', function(event) {
+    //     this.panBy(200, 0);
+    // });
+
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {

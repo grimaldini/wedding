@@ -152,22 +152,25 @@
 </section>
 
 <section id="venue">
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.5936445860216!2d-99.20754724998027!3d18.90510006217289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfcd4b59f1b5%3A0x53f6dd9f1e3c42da!2sHotel%20%26%20Spa%20Hacienda%20de%20Cortes!5e0!3m2!1sen!2sus!4v1640577959792!5m2!1sen!2sus" class="map" allowfullscreen="" loading="lazy">
-        <div class="container">
+    <div class="holder">
+        <iframe id="map" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?center=100,10&amp;width=100%25&amp;height=100%25&amp;hl=en&amp;q=Hacienda%20de%20Cortes,%20Morelos,%20Mexico+(My%20Business%20Name)&amp;t=&amp;z=7&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.5936445860216!2d-99.20754724998027!3d18.90510006217289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfcd4b59f1b5%3A0x53f6dd9f1e3c42da!2sHotel%20%26%20Spa%20Hacienda%20de%20Cortes!5e0!3m2!1sen!2sus!4v1640577959792!5m2!1sen!2sus&z=7" class="map" allowfullscreen="" loading="lazy"></iframe> -->
+        <div class="bar">
+            <div class="container">
             <div class="row">
                 <div class="col-md-6"></div>
-                <div class="col-md-6 content top-padded dark" style="background-color: rgba(220,200,180,0.85);">
+                <div class="col-md-6" style="background-color: white; width:50%">
                     <h3>THE VENUE</h3>
                     <h2>Hacienda de Cortes</h2>
-                    <p>For their 5 year dating anniversary, Luis took Marianne on a trip to the Middle East in Nov of 2019. They saw enchanting sights in Istanbul, Egypt, and Jordan. Luis made a sketch of all the key landmarks along the way.</p>
-                    <p>A few days before the end of the trip, they visited the landmark Marianne was looking forward to the most: Petra! Luis and Marianne woke up before the sunrise and did the hike up to see The Monestary, one of the legendary monuments carved into the rock. Luis suggested to go up to the best viewpoint and take a picture. Luis then handed Marianne the journal he had been sketching in during the trip, and asked her to flip to the last page. Marianne opened it, and what she saw was a sketch of the Monestary, from the exact point where they were standing now. And in the sketch, Luis was down on one knee with a ring. Surprised, she looked up, and Luis was down on one knee just like the sketch, and asked her to marry him. The most amazing and biggest surprise in the world - and of course Marianne said yes! Or actually, "Yay!" because she was lost for words.</p>
+                    <p>We are getting married in a beautiful historic Hacienda (Spanish estate) that was founded  by Hernan Cortes, one of the first Spanish conquerors, in 1530 during the Mexican colonial period.</p>
                 </div>
             </div>
+            </div>
         </div>
-    </iframe>
+    </div>
 </section>
 
-<section id="eng-pics" class="section-padding">
+<!-- <section id="eng-pics" class="section-padding">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -242,67 +245,6 @@
             <div class="col-xs-12 section-border section-padding"></div>
         </div>
     </div>
-    <!--<div class="row">
-        <div class="col-md-12">
-            <div class="diamond floating-logo">
-                <img src="img/sketch-logo.png" alt="Sketch Logo">
-                <div class="ring"></div>
-            </div>
-        </div>
-    </div>-->
-</section>
-
-<section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/9giqL1H6yRs',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">
-    </div>
-    <div id="video-content">
-        <h5>Kolkata</h5>
-        <p>City of joy</p>
-    </div>
-</section>
-
-<section id="map" class="section-padding">
-    <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>It's way easier than you think!</p>
-    </div>
-    <div id="map-canvas"></div>
-    <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-            <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div>
-                <div id="map-content" class="pointer-events-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Hacienda de Cortes</h5>
-                            <p>Plaza Kennedy 90, Atlacomulco, 62560 Jiutepec, Morelos, Mexico</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Transportation company</h5>
-                            <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+91 9412345678</a><br>
-                                <i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a></p>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div>
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                map</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
 <section class="rsvp text-center" id="rsvp">
@@ -319,9 +261,9 @@
                         <div id="add-to-cal"></div>
                     </div>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">
@@ -376,7 +318,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <footer>
     <div class="container">
@@ -398,5 +340,8 @@
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+    </script>
 </body>
 </html>

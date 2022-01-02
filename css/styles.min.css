@@ -10,7 +10,15 @@ p {
     padding-bottom:10px
 }
 
-.title {
+@media screen and (max-width: 991px) {
+    .logo {
+        font-size: 36px !important;
+        margin: 18px 0 26px 0;
+    }
+}
+
+.logo {
+    display: inline-block;
     color: white;
     font-size: 5vw;
     font-family: 'Alex Brush';
@@ -34,13 +42,13 @@ p {
     height: 500px;
 }
 
-.holder{
+.holder {
     width: 100%;
     height: 500px;
     position: relative;
 }
 
-.frame{
+.frame {
     width: 100%;
     height: 100%;
 }
@@ -64,7 +72,7 @@ p {
 
 section#story {
     min-height:760px;
-    background:linear-gradient(180deg, rgba(0,0,0,0.72) 14%, rgba(0, 0, 0, 0) 50%), url("../img/hero3.jpg") no-repeat;
+    background:linear-gradient(180deg, rgba(0,0,0,0.72) 15%, rgba(0, 0, 0, 0) 50%), url("../img/hero3.jpg") no-repeat;
     background-size:cover;
 }
 
@@ -83,10 +91,6 @@ section#events {
 .light { color: white; }
 .dark { color: black; }
 
-.sub-nav {
-    padding-right: 50px;
-    display: inline;
-}
 h2{
     font-size:40px;
     font-weight:300;
@@ -339,6 +343,7 @@ section .header{
 .bounceInLeft,.bounceInRight,.fadeInUp,.fadeInUpDelay,.fadeInDown,.fadeInUpD,.fadeInLeft,.fadeInRight,.bounceInDown{
     visibility:visible
 }
+.header-nav{display:inline-block}
 .header-nav.open{
     visibility:visible;
     opacity:0.9;
@@ -425,7 +430,7 @@ section .header{
     width: 100%;
 }
 header{
-    padding:20px 0;
+    padding:20px 0 0px 0;
     border-bottom:solid 1px rgba(255,255,255,0.2);
     position:relative;
     width:1170px;

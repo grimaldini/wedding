@@ -2,12 +2,73 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,300italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-
-p {
+.primary-nav>a {
     font-size:14px;
     font-weight: normal;
     line-height:25px;
     padding-bottom:10px
+}
+
+.primary-nav>a{
+    color:#fff;
+    -webkit-transition-timing-function:ease;
+    transition-timing-function:ease;
+    -webkit-transition-duration:200ms;
+    transition-duration:200ms;
+    -webkit-transition-property:color, border-color, background-color;
+    transition-property:color, border-color, background-color
+}
+
+a:hover, a:focus{
+    color:#d3b56a;
+    text-decoration:none
+}
+
+.logo {
+    display: inline;
+}
+
+.logo > a {
+    display: inline-block;
+    font-size: 5vw;
+    text-transform: none;
+    font-family: 'Alex Brush';
+}
+
+#story {
+    min-height:760px;
+    background:linear-gradient(180deg, rgba(0,0,0,0.72) 15%, rgba(0, 0, 0, 0) 50%), url("../img/hero3.jpg") no-repeat;
+    background-size:cover;
+}
+
+.story-content {
+    margin-top: 170px;
+    padding-bottom: 10px;
+    background-color: rgba(164,176,178,0.75);
+}
+
+#proposal {
+    min-height:850px;
+	background:url("../img/petra.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.proposal-content {
+    margin-top: 250px;
+    padding-bottom: 10px;
+    background-color: rgba(220,200,180,0.85);
+}
+
+#events {
+    min-height: 720px;
+	background: url("../img/4nniversary.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.events-content {
+    margin-top: 60px;
+    padding-bottom: 10px;
+    background-color: rgba(200,220,230,0.65);
 }
 
 @media screen and (max-width: 991px) {
@@ -15,13 +76,41 @@ p {
         font-size: 36px !important;
         margin: 18px 0 26px 0;
     }
-}
 
-.logo {
-    display: inline-block;
-    color: white;
-    font-size: 5vw;
-    font-family: 'Alex Brush';
+    #story {
+        position: relative;
+        min-height:900px;
+        background:linear-gradient(180deg, rgba(0,0,0,0.72) 15%, rgba(0, 0, 0, 0) 50%), url("../img/hero3.jpg") no-repeat;
+        background-size:cover;
+    }
+
+    .story-content {
+        margin: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: rgba(164,176,178,0.75);
+    }
+
+    #proposal {
+        min-height:1200px;
+        background-position-x: 0%;
+        background-position-y: 100%;
+    }
+
+    .proposal-content {
+        margin-top: 0;
+    }
+
+    #events {
+        min-height: 1200px;
+        background-position-x: 80% !important;
+        background-position-y: 90% !important;
+    }
+
+    .events-content {
+        background: rgba(250,220,190, .5);
+        margin-top: 0;
+    }
 }
 
 .inline {
@@ -33,7 +122,6 @@ p {
 }
 
 #map {
-    /* display: block; */
     position: relative;
     border-width: 0;
     left: 0px;
@@ -61,33 +149,6 @@ p {
     height: 40px;
 }
 
-/* .floating {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 0px;
-    width: 25%;
-    height: 400px;
-} */
-
-section#story {
-    min-height:760px;
-    background:linear-gradient(180deg, rgba(0,0,0,0.72) 15%, rgba(0, 0, 0, 0) 50%), url("../img/hero3.jpg") no-repeat;
-    background-size:cover;
-}
-
-section#proposal {
-    min-height:850px;
-	background:url("../img/petra.jpg") no-repeat center;
-	background-size: cover;
-}
-
-section#events {
-    min-height:720px;
-	background: url("../img/4nniversary.jpg") no-repeat center;
-	background-size: cover;
-}
-
 .light { color: white; }
 .dark { color: black; }
 
@@ -96,6 +157,8 @@ h2{
     font-weight:300;
 }
 h3{
+    margin-block-start: 0;
+    padding-block-start: 20px;
     font-size:18px;
     font-weight:700;
     text-transform:uppercase;
@@ -201,19 +264,6 @@ section#invitation {
 }
 .no-margin{
     margin:0
-}
-a{
-    color:#fff;
-    -webkit-transition-timing-function:ease;
-    transition-timing-function:ease;
-    -webkit-transition-duration:200ms;
-    transition-duration:200ms;
-    -webkit-transition-property:color, border-color, background-color;
-    transition-property:color, border-color, background-color
-}
-a:hover,a:focus{
-    color:#d3b56a;
-    text-decoration:none
 }
 body{
     font-family:"Open Sans",sans-serif;

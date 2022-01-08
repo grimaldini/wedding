@@ -101,9 +101,9 @@ a:hover, a:focus{
         margin: 18px 0 26px 0;
     }
 
-    /* .logo > a {
-        font-size: 56px !important;
-    } */
+    .logo > a {
+        font-size: 48px;
+    }
 
     #story {
         position: relative;
@@ -138,6 +138,10 @@ a:hover, a:focus{
     .events-content {
         background: rgba(250,220,190, .5);
         margin-top: 0;
+    }
+
+    #getting-there {
+        min-height: 900px;
     }
 
     .getting-there-content {

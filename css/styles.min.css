@@ -30,7 +30,7 @@ a:hover, a:focus{
 
 .logo > a {
     display: inline-block;
-    font-size: 5vw;
+    font-size: 56px;
     text-transform: none;
     font-family: 'Alex Brush';
 }
@@ -98,9 +98,12 @@ a:hover, a:focus{
 
 @media screen and (max-width: 991px) {
     .logo {
-        font-size: 36px !important;
         margin: 18px 0 26px 0;
     }
+
+    /* .logo > a {
+        font-size: 56px !important;
+    } */
 
     #story {
         position: relative;
@@ -142,7 +145,7 @@ a:hover, a:focus{
     }
 
     #map {
-        left: 50%;
+        visibility: hidden;
     }
 }
 
@@ -299,12 +302,12 @@ body{
     outline:none !important
 }
 ul {
-    /* margin-left: 5; */
-    padding: 22px
+    margin-left:0;
+    padding:0
 }
-/* ul li{
+ul li{
     list-style:none
-} */
+}
 section .header{
     padding-bottom:30px
 }

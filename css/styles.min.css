@@ -83,6 +83,11 @@ a:hover, a:focus{
     background-color: rgba(100,120,130,0.65);
 }
 
+.getting-there-link{
+    color: white !important;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 991px) {
     .logo {
         margin: 18px 0 26px 0;

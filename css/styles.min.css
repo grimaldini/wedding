@@ -83,6 +83,10 @@ a:hover, a:focus{
     background-color: rgba(100,120,130,0.65);
 }
 
+.registry-content {
+    font-size: 18px;
+}
+
 .getting-there-link{
     color: white !important;
     text-decoration: underline;

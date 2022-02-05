@@ -143,9 +143,22 @@ a:hover, a:focus{
     .getting-there-content {
         margin-top: 0;
     }
+
+    .header-nav {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 477px) {
+    .nav > ul.primary-nav {
+        padding: 10px;
+    }
+    .header > ul.primary-nav {
+        padding: 10px;
+    }
+    .btn-small {
+        padding: 20px !important;
+    }
     .navicon {
         top: 8vw !important;
     }
